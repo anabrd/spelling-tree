@@ -8,8 +8,9 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-      <Corner />
       <Header />
+      <Corner position="left"/>
+      <Corner position="right"/>
     </div>
   );
 }
