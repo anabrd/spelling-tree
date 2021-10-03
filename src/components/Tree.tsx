@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import Controls from './Controls'
 import styled from 'styled-components'
 import leafImg from '../leaf.svg'
 
@@ -15,10 +16,17 @@ interface LeafObj {
     src?: string;
 }
 
-const TreeWrapper = styled.div`
-    width: ${containerSize}px;
+const TreeControlsWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     height: 80vh;
     position: relative;
+`
+
+const TreeWrapper = styled.div`
+    width: ${containerSize}px;
 `
 const Leaf = styled.img<LeafObj>`
     position: absolute;
@@ -72,6 +80,7 @@ const Letter = styled.p<LeafObj>`
 `
 
 function Tree() {
+
     const leafArrDupe: LeafObj[] = [];
     let leafRenderArr: JSX.Element[] = [];
     const [leafArr, setLeafArr] = useState<LeafObj[]>([]);
@@ -103,9 +112,12 @@ function Tree() {
     </>)
 
     return (
-        <TreeWrapper>
-            {leafRenderArr}
-        </TreeWrapper>
+        <TreeControlsWrapper>
+            <TreeWrapper>
+                {leafRenderArr}
+            </TreeWrapper>
+            <Controls />
+        </TreeControlsWrapper>
     )
 }
 

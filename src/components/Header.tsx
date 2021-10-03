@@ -20,7 +20,7 @@ function Header() {
         <Title>
             Spelling Tree
         </Title>
-        <Subtitle>Make as many words as you can using the 7 letters, always using the letter in the center.</Subtitle>
+        <Subtitle>Make as many words as you can with the 7 letters, always using the one in the center.</Subtitle>
         </div>
     )
 }
