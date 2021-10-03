@@ -7,6 +7,7 @@ import styled from 'styled-components'
 const MainWrapper = styled.div`
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
     text-align: center;
 `
 
