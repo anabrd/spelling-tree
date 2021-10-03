@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const LevelWrapper = styled.div`
     width: 10%;
+
 `
 
 function Level() {

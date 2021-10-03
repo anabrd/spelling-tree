@@ -48,12 +48,12 @@ function Corner({position}: CornerProps) {
     return (
         position == "left" ?
         <CornerWrapper bottomLeft={true}>
-            <CornerText bottomLeft={true} vertical={true}>spelling bee</CornerText>
+            <CornerText bottomLeft={true} vertical={true}>spelling tree</CornerText>
             <CornerLine bottomLeft={true} vertical={true}/>
             <CornerText bottomLeft={true}>designed and developed by ana brdar</CornerText>
         </CornerWrapper>
         : <CornerWrapper>
-            <CornerText>spelling bee</CornerText>
+            <CornerText>spelling tree</CornerText>
             <CornerLine />
             <CornerText vertical={true}>github</CornerText>
         </CornerWrapper>
